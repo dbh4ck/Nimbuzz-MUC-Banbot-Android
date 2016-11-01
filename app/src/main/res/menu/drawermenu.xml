@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/home"
+          android:id="@+id/id_home"
+          android:title="@string/my_home"
+          android:background="@drawable/activated_background" />
+    <item android:icon="@drawable/profile"
+          android:id="@+id/id_prof"
+          android:title="@string/my_prof"
+          android:background="@drawable/activated_background" />
+    <item android:icon="@drawable/contacts"
+        android:id="@+id/id_contact_list"
+        android:title="@string/my_contact_list"
+        android:background="@drawable/activated_background" />
+
+    <item android:title="Others">
+        <menu>
+            <item android:icon="@drawable/chatroom"
+                  android:id="@+id/id_joinroom"
+                  android:title="@string/join_room"
+                  android:background="@drawable/activated_background" />
+            <item android:icon="@drawable/help"
+                  android:id="@+id/id_help"
+                  android:title="@string/help"
+                  android:background="@drawable/activated_background" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:icon="@drawable/settings"
+              android:id="@+id/id_about"
+              android:title="@string/about"
+              android:background="@drawable/activated_background" />
+        <item android:icon="@drawable/logout"
+              android:id="@+id/id_signout"
+              android:title="@string/sign_out"
+              android:background="@drawable/activated_background" />
+        <item android:icon="@drawable/exit"
+              android:id="@+id/id_exit"
+              android:title="@string/exit"
+              android:background="@drawable/activated_background" />
+    </group>
+
+</menu>

@@ -1,0 +1,169 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transcriptMode="normal"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.blogspot.dbh4ck.nimbuzzadminbot.Fragments.ChatroomFragment"
+        android:background="#b7fdc7"
+    android:backgroundTint="@color/common_plus_signin_btn_text_dark_disabled">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/joinlbl"
+        android:id="@+id/textView9"
+        android:textSize="25sp"
+        android:textColor="?android:attr/colorControlActivated"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/roomname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Roomname"
+            android:inputType="text"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/colorPrimaryDark" />
+    </android.support.design.widget.TextInputLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/botnick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Bot Nick"
+                android:inputType="text"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/botmastxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bot Master ID"
+                android:inputType="text"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enterroombtnlbl"
+            android:id="@+id/roomenterbtn"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:layout_below="@+id/botmastxt"
+            android:layout_alignLeft="@+id/botmastxt"
+            android:layout_alignStart="@+id/botmastxt"
+            style="@style/Widget.AppCompat.Button.Colored"
+            tools:style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textAllCaps="false" />
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leave"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="20sp"
+        android:id="@+id/leaveroombtn"
+        android:layout_below="@+id/botmastxt"
+        android:layout_alignRight="@+id/botmastxt"
+        android:layout_alignEnd="@+id/botmastxt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textAllCaps="false" />
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Msg Here"
+                android:inputType="text"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendmsg"
+            android:id="@+id/sendroommsgbtn"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignTop="@+id/editText"
+            android:layout_toRightOf="@+id/textView9"
+            android:textAllCaps="false"
+            android:textColorLink="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
